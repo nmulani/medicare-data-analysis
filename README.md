@@ -273,11 +273,11 @@ sns.stripplot(x="Provider State", y="Average Covered Charges", data=drg470)
 ![png](output_15_1.png)
 
 
-This chart shows that hospital charges in this DRG group vary greatly across the United States, and often within certain states. In particular, California, Florida, Texas, New Jersey and Pennsylvania seem to have great variance in hospital charge amounts for this procedure within their states, including charges far beyond those in many other states.
+This chart shows that hospital charges in this DRG group vary greatly across the United States, and often within certain states. In particular, California, Florida, Texas, New Jersey and Pennsylvania seem to have a greater variety in hospital charge amounts for this particular procedure within their states, including charges far beyond those in many other states.
 
 ### Hospital Charges and Medicare Payments in California
 
-Let's dive deeper into the charge data for one of these states with higher variance. We can use 'groupby' on our dataset for DRG 470 to allow for easy extraction of California data. Then, we can use a 'pairplot' to plot the pairwise relationship between Average Medicare Payments and Average Covered Charges in California. The scatterplots show the joint relationships between Average Medicare Payments and Average Covered Charges, whereas the histograms show the univariate distributions of each.
+Let's dive deeper into the charge data for one of these states with more variety in hospital charge amounts for DRG 470. We can use 'groupby' on our dataset to allow for easy extraction of California data. Then, we can use a 'pairplot' to plot the pairwise relationship between Average Medicare Payments and Average Covered Charges in California. The scatterplots show the joint relationships between Average Medicare Payments and Average Covered Charges, whereas the histograms show the univariate distributions of each.
 
 
 ```python
@@ -300,7 +300,7 @@ What we see is a situation where Medicare payment amounts for these procedures a
 
 ### Hospital Charges and Medicare Payments in Maryland
 
-The stripplot we created a bit above showing hospital charges by state for DRG 470 also included some states that had much less variance in hospital charges than California. One of the most even and low distributions for hospital charges appeared to be in Maryland. We can use the same 'groupby' dataset we created above to take a look at the 'pairplot' for the relationship between Average Medicare Payments and Average Covered Charges for DRG 470 in Maryland.
+The stripplot we created a bit above showing hospital charges by state for DRG 470 also included some locations that had much less difference in statewide hospital charges than California. One of the lowest and most evenly distributed collection of hospital charges appeared to be in Maryland. We can use the same 'groupby' dataset we created above to take a look at the 'pairplot' for the relationship between Average Medicare Payments and Average Covered Charges for DRG 470 in Maryland.
 
 
 ```python
